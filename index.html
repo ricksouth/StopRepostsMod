@@ -7,7 +7,7 @@
 				let htmlString = '{[';
 				for (let file of data) {
 					if (htmlString != '{[') {
-						htmlString += ",";
+						htmlString += ", ";
 					}
 					htmlString += '"' + file.name.replace(".txt", "") + '"';
 				}
