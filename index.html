@@ -9,7 +9,7 @@
 					if (htmlString != '{[') {
 						htmlString += ",";
 					}
-					htmlString += file.name.replace(".txt", "");
+					htmlString += '"' + file.name.replace(".txt", "") + '"';
 				}
 				htmlString += ']}';
 				document.getElementsByTagName('body')[0].innerHTML = htmlString;
